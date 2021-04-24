@@ -21,7 +21,7 @@
     * `cp`: CoPe 複製檔案（cp＋欲複製檔案＋複製檔案的名稱），複製資料夾（`cp -r `＋欲複製資料夾＋複製資料夾的名稱）
     * `cat`: CATenate 連接檔案，若只有 cat＋檔案名稱：顯示檔案內容
 3. 用 command line 建立一個叫做 wifi 的資料夾，並且在裡面建立一個叫 afu.js 的檔案！
-  ```javascript
+  ```
   mkdir wifi  //建立 wifi 資料夾
   cd wifi  //移動到 wifi 資料夾內
   touch afu.js  // 建立檔案 afu.js
