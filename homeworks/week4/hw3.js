@@ -20,7 +20,7 @@ request(`https://restcountries.eu/rest/v2/name/${process.argv[2]}`, (error, resp
   }
 
   if (countryInfo.status === 404) {
-    console.log('「找不到國家資訊」。')
+    console.log('找不到國家資訊')
     return
   }
 
