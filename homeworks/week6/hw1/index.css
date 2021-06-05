@@ -1,0 +1,299 @@
+.navbar {
+  box-shadow: -1.4px -1.4px 6px 0 #97a2a0;
+}
+
+.navbar .wrapper {
+  height: 84px;
+  margin: 0 auto;
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 14px;
+}
+
+.navbar__site-name {
+  font-size: 36px;
+  color: #489846;
+  font-family: Questrial;
+}
+
+.navbar__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  color: #010101;
+  font-size: 16px;
+  font-family: MicrosoftJhengHei;
+}
+
+.navbar__list li {
+  margin-left: 12px;
+  border-radius: 8px;
+  transition: background 0.2s ease-in;
+}
+
+.navbar__list li.active a, .navbar__list li a:hover {
+  color: white;
+}
+
+.navbar__list li.active, .navbar__list li:hover {
+  background-color: #ff7286;
+  color: white;
+  cursor: pointer;
+}
+
+.navbar__list li a {
+  display: block;
+  text-decoration: none;
+  color: black;
+  padding: 12px 25px;
+}
+
+.wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.banner {
+  height: 430px;
+  background: no-repeat center/cover url(banner5.jpg);
+  position: relative;
+}
+
+.banner:after {
+  content:'';
+  position: absolute;
+  background: rgba(255, 255, 255, 0.2);
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.banner h1 {
+  display: inline-block;
+  margin: 0;
+  color: rgb(245, 248, 230);
+  position: relative;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+  font-weight: bold;
+  font-family: MicrosoftJhengHei;
+  letter-spacing: 4px;
+}
+
+h2 {
+  margin:0;
+}
+
+.section {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.section__title {
+  display: inline-block;
+  font-size: 36px;
+  font-weight: bold;
+  font-family: MicrosoftJhengHei;
+  border-left: 15px solid #a3dea2;
+  padding-left: 17px;
+  margin-bottom: 36px;
+}
+
+.section__desc {
+  font-size: 16px;
+  font-family: MicrosoftJhengHei;
+  line-height: 2em;
+  margin-bottom: 70px;
+}
+
+.button {
+  display: inline-block;
+  padding: 60px 80px;
+  color: #3e613d;
+  font-family: MicrosoftJhengHei;
+  font-size: 36px;
+  font-weight: bold;
+  letter-spacing: 0.32px;
+  text-align: center;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.5s;
+}
+
+.button:hover {
+  transform: scale(1.1);
+}
+
+.btn-order {
+  background: #a8e8e1;
+  margin-right: 23px;
+}
+
+.btn-query {
+  background: #f9f9b5;
+}
+
+.section__images {
+  display: flex;
+}
+
+.section__images div {
+  width:25%;
+
+}
+
+.section__images img {
+  width:100%
+}
+
+.section__reviews {
+  display: flex;
+  margin-top: 45px;
+}
+
+.review {
+  border: 1px solid #c7e5ec;
+  background-color: white;
+  margin: 8px;
+  width: 400px;
+  height: 190px;
+  text-align: center;
+  box-shadow: -1.4px -1.4px 4px 0 #d8eaef;
+  border-radius: 5px;
+  position: relative;
+}
+
+.review__avatar {
+  position: absolute;
+  width: 105px;
+  height: 105px;
+  border: 1px solid rgb(161, 161, 161);
+  border-radius: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.review__name {
+  font-size: 12px;
+  margin-top: 60px;
+  letter-spacing: 0.14px;
+  color: black;
+  font-family: MicrosoftJhengHei;
+}
+
+.review__content {
+  font-size: 12px;
+  margin: 15px 19px 39px 24px;
+  letter-spacing: 0.14px;
+  color: black;
+  font-family: MicrosoftJhengHei;
+  line-height: 20px;
+}
+
+footer {
+  margin-top: 48px;
+}
+
+.footer__top {
+  background: #e8efee;
+  padding: 32px;
+  color: #484848
+}
+
+.footer__top .wrapper {
+  display: flex;
+  justify-content:space-between;
+}
+
+.footer__info {
+  margin-right: 10px;
+}
+
+
+.footer__info div + div{
+  margin-top: 10px;
+}
+
+.footer__site {
+  font-family: Questrial;
+  font-size: 36px;
+  color: #489846;
+}
+
+.footer__bottom {
+  background: #35564b;
+  padding: 12px;
+  text-align: center;
+  color: white;
+  font-family: MicrosoftJhengHei;
+  font-size: 16px;
+}
+
+@media(max-width: 768px) {
+  .navbar .wrapper {
+    height: 120px;
+    flex-direction: column;
+    margin-bottom: 0;
+    padding: 0;
+    justify-content: space-between;
+  }
+
+  .navbar__site-name {
+    margin-top: 10px;
+  }
+
+  .navbar__list {
+    display: flex;
+    width: 100%;
+  }
+
+  .navbar__list li {
+    flex: 1;
+    margin-left: 0;
+    border-radius: 0;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .btn-order {
+    margin-bottom: 23px;
+    margin-right: 0px;
+  }
+
+  .section__images {
+    flex-direction: column;
+  }
+
+  .section__images div {
+    width: 100%;
+  }
+
+  .section__reviews {
+    flex-direction: column;
+  }
+
+  .review {
+    width: 100%;
+    margin-bottom: 50px;
+    margin-left: 0px;
+    height: 160px;
+  }
+
+  .footer__top .wrapper {
+    flex-direction: column-reverse;
+  }
+
+  .footer__info {
+    margin-top: 16px;
+    margin-right:0px;
+  }
+}
+    
