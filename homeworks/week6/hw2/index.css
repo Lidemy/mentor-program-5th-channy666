@@ -1,0 +1,129 @@
+body {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.wrapper {
+  padding: 30px 0px 0px 42px;
+  border-top: 8px solid #fad312;
+  box-shadow: 1.8px 2.4px 5px 0 rgba(0, 0, 0, 0.3);
+  max-width: 645px;
+  margin: 50px auto;
+  background: white;
+}
+
+h1{
+  font-family: MicrosoftJhengHei;
+  font-size: 36px;
+  font-weight: bold
+}
+
+.info__content div {
+  font-family: MicrosoftJhengHei;
+  font-size: 14px;
+  margin-bottom: 11px;
+}
+
+.info__require {
+  font-family: MicrosoftJhengHei;
+  font-size: 16px;
+  color: #e74149;
+  margin-top: 15px;
+}
+
+.form__data {
+  margin-top: 49px;
+  line-height: 45px;
+  font-family: MicrosoftJhengHei;
+  font-size: 20px;
+}
+
+.form__data-topic input {
+  line-height: 30px;
+}
+
+.form__data-topic:after {
+  content: " *";
+  color: #e74149;
+
+}
+
+input {
+  color: #afafaf;
+  font-family: MicrosoftJhengHei;
+  font-size: 16px;
+  border: solid 1px #d0d0d0;
+  width: 287px;
+  height: 23px;
+}
+
+.signUp-ways {
+  line-height: 35px;;
+}
+
+.signUp-way {
+  height: 12px;
+  width: 12px;
+  border: solid 1px #d0d0d0;
+  background-color: #bababa;
+  margin: 0px 8px 0px 5px;
+}
+
+label {
+  font-family: MicrosoftJhengHei;
+  font-size: 14px;
+}
+
+.form__data-other {
+  line-height: 36px;
+}
+
+.other-desc {
+  font-family: MicrosoftJhengHei;
+  font-size: 14px;
+}
+
+.form__button input {
+  width: 92px;
+  height: 40px;
+  border-radius: 3px;
+  background: #fad312;
+  font-family: MicrosoftJhengHei;
+  font-size: 15px;
+  color: black;
+  border: none;
+  margin: 50px 0px 21px 0px;
+}
+
+.form__button input:hover {
+  cursor: pointer;
+}
+
+.reminder {
+  font-family: MicrosoftJhengHei;
+  font-size: 14px;
+  padding: 0px 0px 45px 0px;
+}
+
+footer {
+  background: black;
+  color: #999999;
+  padding: 20px;
+  text-align: center;
+  margin-top: 80px;
+}
+
+@media(max-width: 645px) {
+  .wrapper {
+    padding: 10px 20px 0px 20px;
+    margin: 0px;
+  }
+
+  input {
+  width: 200px;
+}
+
+  footer {
+    margin-top: 0px;
+    padding: 10px;
+  }
+}
