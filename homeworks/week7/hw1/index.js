@@ -12,7 +12,6 @@ document.querySelector('form').addEventListener('submit',
         values[input.name] = input.value
         if (!input.value) {
           isValid = false
-          console.log(isValid)
         }
       } else if (radios.length) {
         if ([...radios].some((radio) => radio.checked)) {
@@ -20,7 +19,6 @@ document.querySelector('form').addEventListener('submit',
           values[check.name] = check.value
         } else {
           isValid = false
-          console.log(isValid)
         }
       } else {
         continue
