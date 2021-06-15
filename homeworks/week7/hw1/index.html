@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"/>
+    <link rel="stylesheet" href="./index.css"/>
+    <title>新拖延運動報名表單</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="info">
+        <h1 class="info__title">新拖延運動報名表單</h1>
+        <div class="info__content">
+          <div class="info__content-time">活動日期：2020/12/10 ~ 2020/12/11</div>
+          <div>活動地點：台北市大安區新生南路二段1號</div>
+        </div>
+        <div class="info__require">* 必填</div>
+      </div>
+      <form>
+        <div class="form__data hide__data-error required">
+          <div class="form__data-topic">暱稱</div>
+          <input types="text" placeholder="您的回答" name="nickname" class="input-text" />
+          <div class="form__data-error">請輸入暱稱</div>
+        </div>
+        <div class="form__data hide__data-error required">
+          <div class="form__data-topic">電子郵件</div>
+          <input type="email" placeholder="您的電子郵件" name="email" class="input-text" />
+          <div class="form__data-error">請輸入電子郵件</div>
+        </div>
+        <div class="form__data hide__data-error required">
+          <div class="form__data-topic">手機號碼</div>
+          <input type="text" placeholder="您的手機號碼" name="phone" class="input-text" />
+          <div class="form__data-error">請輸入手機號碼</div>
+        </div>
+        <div class="form__data hide__data-error required">
+          <div class="form__data-topic">報名類型</div>
+            <div class="signUp-ways">
+              <input type="radio" name="type" id="bed" class="signUp-way1" value="躺在床上用想像力實作"/><label for="bed">躺在床上用想像力實作</label>
+              <br>
+              <input type="radio" name="type" id="floor" class="signUp-way2" value="趴在地上滑手機找現成的"/><label for="floor">趴在地上滑手機找現成的</label>
+            </div>
+            <div class="form__data-error">請選擇報名類型</div>
+          </div>
+        <div class="form__data hide__data-error required">
+          <div class="form__data-topic">怎麼知道這個活動的？</div>
+          <input type="text" placeholder="您的回答" name="referal" class="input-text"/>
+          <div class="form__data-error">請輸入怎麼知道這個活動的？</div>
+        </div>
+        <div class="form__data">
+          <div class="form__data-other">
+            <div>其他</div>
+            <div class="other-desc">對活動的一些建議</div>
+          </div>
+          <input type="text" placeholder="您的回答" name="other" />
+        </div>
+        <div class="form__button">
+          <input type="submit" value="提交" name="button" />
+        </div>
+        <div class="reminder">請勿透過表單送出您的密碼。</div>
+      </form>
+    </div>
+    <footer>© 2020 © Copyright. All rights Reserved.</footer> 
+  </body>
+  <script src="index.js"></script>
+</html>
