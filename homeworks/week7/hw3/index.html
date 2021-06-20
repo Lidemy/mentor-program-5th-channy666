@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>to-do list</title>
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" />
+    <link rel="stylesheet" href="./index.css"/>
+  </head>
+  <body>
+    <section class="to-do__list">
+      <header>
+        <h2>* To-Do List *</h2>
+        <div class="header__add">
+          <input type="text" name="create" placeholder="What's next?"/>
+          <button class="btn__add">Add</button>
+        </div>
+      </header>
+      <div class="list">
+        <div class="list__item checked">
+          <div class="list__item-check"></div>
+          <div class="list__item-content">尋找好吃份量又剛剛好的冰淇淋 / 冰棒</div>
+          <button class="btn__del">Del</button>
+        </div>
+        <div class="list__item checked">
+          <div class="list__item-check"></div>
+          <div class="list__item-content">看兩集 The Office（配午、晚餐）</div>
+          <button class="btn__del">Del</button>
+        </div>
+        <div class="list__item">
+          <div class="list__item-check"></div>
+          <div class="list__item-content">看租屋資訊</div>
+          <button class="btn__del">Del</button>
+        </div>
+        <div class="list__item">
+          <div class="list__item-check"></div>
+          <div class="list__item-content">計畫好下次出門要買的東西、要去的地方</div>
+          <button class="btn__del">Del</button>
+        </div>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script src="./index.js"></script> 
+</html>
