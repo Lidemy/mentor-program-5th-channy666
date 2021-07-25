@@ -1,0 +1,201 @@
+body {
+  margin: 0;
+  background: #f7f7f7;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.warning {
+  background: #ffc4c6;
+  color: #a20606;
+  padding: 12px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.board {
+  width: 100%;
+  max-width: 768px;
+  background: white;
+  margin: 20px auto;
+  padding: 10px;
+  box-shadow: 1px 1px 3px #e8e8e8;
+  border-radius: 5px;
+  position: relative;
+}
+
+.board__btns {
+  display: flex;
+  align-items: flex-end;
+  position: absolute;
+  right: 3%;
+  top: 21px;
+}
+
+
+.board__btn {
+  color: #583c63;
+  border: 1px solid #c2dffb;
+  border-radius: 5px;
+  width: 100px;
+  font-size: 16px;
+  background: white;
+  margin: 10px 0px 0px 10px;
+  text-decoration: none;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.board__nickname {
+  color: #583c63;
+  font-size: 16px;
+  margin: 10px 0px 0px 10px;
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+  background: #c2dffb;
+  border-radius: 5px;
+  min-width: 100px;
+  letter-spacing: 1px;
+}
+
+.board__title {
+  margin: 15px;
+  letter-spacing: 1px;
+  font-size: 40px;
+}
+
+.board__new-comment-form, .board__register-form {
+  margin: 10px 10px 10px 16px;
+}
+
+.board__register-info {
+  margin-bottom: 10px;
+  color: #583c63;
+}
+
+.board__nickname input, .board__register-info input {
+  border: 1px solid #c2dffb;
+  padding: 5px;
+  margin: 5px;
+}
+
+.board__nickname input::placeholder, .board__register-info input::placeholder {
+  color: #c2dffb;
+}
+
+.board__new-comment-form textarea {
+  width: 100%;
+  border: 1px solid #c2dffb;
+  padding: 10px;
+}
+
+.board__new-comment-form textarea::placeholder {
+  color: #c2dffb;
+}
+
+.error, .please-login {
+  color: #f12b2b;
+  margin-top: 10px;
+}
+
+.board__submit-btn {
+  padding: 10px;
+  display: block;
+  color: #583c63;
+  border: 1px solid #c2dffb;
+  border-radius: 5px;
+  width: 100px;
+  font-size: 16px;
+  background: white;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.board__submit-btn:hover, .board__btn:hover {
+  background: #c2dffb;
+}
+
+.board__hr {
+  background: #e8e8e8;
+  height: 2px;
+  width: 95%;
+  margin: 20px auto;
+}
+
+.card {
+  margin: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+  min-height: 70px;
+  display: flex;
+}
+
+.card__avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #e4f0fb;
+}
+
+.card__body {
+  margin-left: 20px;
+  max-width: 80%;
+}
+
+.card__body-info {
+  margin-top: 5px;
+}
+
+.card__body-info-author {
+  color: #5c9edc;
+  font-weight: bold;
+  margin-right: 10px;
+  word-break: break-word;
+}
+
+.card__body-info-time {
+  color: #a0a0a0;
+}
+
+.card__body-content {
+  max-width: 95%;
+  margin-top: 8px;
+  word-break: break-word;
+  white-space: pre-wrap;
+}
+
+@media (max-width: 500px) {
+  .board {
+    margin: 0;
+  }
+
+  .board__title {
+    text-align: center;
+  }
+
+  .board__btns {
+    position: relative;
+    right: 0;
+    top: 0;
+    margin: 0 auto;
+    justify-content: center;
+  }
+
+  .card {
+    margin: 0;
+    padding: 10px 5px;
+  }
+
+  .card__avatar {
+    width: 50px;
+    height: 50px;
+  }
+
+  .card__body {
+    width: 75%;
+  }
+}
