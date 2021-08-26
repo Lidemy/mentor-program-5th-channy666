@@ -90,6 +90,7 @@ function appendStreams(streams) {
     document.querySelector('.section__streams').appendChild(stream)
     const streamInfo = streams[i]
     const { url, logo, status, display_name: displayName } = streamInfo.channel
+    // 直接使用 'display_name' eslint 會跳錯  not in camel case
     stream.outerHTML = STREAM_TEMPLATE
       .replace('$url', url)
       .replace('$preview', streamInfo.preview.medium)
