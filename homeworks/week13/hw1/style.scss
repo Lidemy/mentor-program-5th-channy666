@@ -1,0 +1,330 @@
+@import '_variables';
+@import '_mixins';
+
+body {
+  max-width: 1920px;
+  background: $backgroundColor;
+  height: 100%;
+
+  .navbar {
+    display: flex;
+    background: $backgroundColor;
+    justify-content: space-between;
+    height: 80px;
+  
+    &__visitor {
+      display: flex;
+      margin: 0 4%;
+  
+      &__title {
+        display: flex;
+        align-items: center;
+        margin-right: 40px;
+        cursor:pointer; 
+        @include title(32px);
+  
+        &-btn {
+          @extend %titleBtn;
+        }
+      }
+      &__btns {
+        @extend %navbarBtns;
+
+        .navbar__visitor__btn {
+          margin-right: 20px;
+          text-decoration: none;
+          color: $lightGreen;
+          letter-spacing: 1px;
+          @include btnHoverScale(1.2)
+        }
+      }
+    }
+  
+    &__admin {
+      margin: 0 4%;
+      display: flex;
+  
+      &-btns {
+        @extend %navbarBtns;
+
+        .navbar__admin-btn {
+          margin-left: 20px;
+          @include btn1(7px 10px);
+          @include btnHoverColor;
+        }
+      }
+    }
+  }
+
+  .banner {
+    height: 230px;
+    background: $mediumGreen;
+    color: $backgroundColor;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+    &__desc {
+      margin-top: 60px;
+      font-size: 26px;
+      font-weight: bold;
+      letter-spacing: 3px;
+    }
+  
+    &__welcome {
+      margin-top: 20px;
+      font-size: 18px;
+      letter-spacing: 1.5px;
+    }
+  }
+
+  main {
+    background: $backgroundColor;
+    position: relative;
+    top: -30px;
+    margin-bottom: -20px;
+    min-height: 600px;
+
+    .articles {
+      @include articlesSection(70%, -30px, 1px);
+
+      .article {
+        @include article(40px);
+
+        &__title {
+          margin-bottom: 25px;
+          width: 80%;
+          line-height: 30px;
+          @include title(20px);
+        }
+
+        &__admin-btns {
+          position: absolute;
+          top: 9.5%;
+          left: 81%;
+
+          .article__admin-btn {
+            margin-left: 10px;
+            @include btn1(5px 10px);
+            @include btnHoverColor;
+          }
+        }
+        
+        &__time {
+          background: $darkGreen;
+          color: $mediumGreen;
+          padding: 8px 15px;
+          letter-spacing: 1px;
+          margin-bottom: 25px;
+          width: 95%;
+        }
+        
+        &__content {
+          overflow: hidden;
+          height: 200px;
+          margin-bottom: 40px;
+          @extend %articleContent;
+        }
+        
+        &__btn {
+          @include btn1(7px 12px);
+          @include btnHoverColor;
+        }
+
+        &__page__header {
+          display: flex;
+
+          .article__page__admin-btn {
+            margin-left: 10px;
+            @include btn1(5px 10px);
+            @include btnHoverColor;
+          }
+        }
+
+        &__page__content {
+          @extend %articleContent;
+        }
+      }
+
+      .create-article {
+        @include article(50px 60px);
+
+        &__title {
+          @include title(22px);
+        }
+        
+        &__form {
+          display:flex;
+          flex-direction: column;
+          margin-top: 30px;
+          color: $mediumGreen;
+
+          &-title {
+            height: 30px;
+            margin-bottom: 30px;
+            @extend %placeholder;
+          }
+
+          &-content {
+            height: 300px;
+            margin-bottom: 30px;
+            @extend %placeholder;
+          }
+
+          &-error {
+            @extend %errorMessage;
+          }
+
+          &-btn {
+            align-self: flex-end;
+            background: none;
+            font-size: 18px;
+            @include btnHoverColor;
+            @include btn1(12px 20px);
+          }
+        }
+      }
+    }
+
+    .articles__list {
+      @include articlesSection(70%, -30px, 1px);
+      @extend %border;
+
+      .article__list {
+        padding: 35px 20px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 90%;
+        margin: 0 auto;
+
+        &:not(:last-child) {
+          border-bottom: 1px solid $lightGreen;
+        }
+
+        &__title {
+          width: 75%;
+          line-height: 30px;
+          @include btnHoverScale(1.05);
+          @include title(16px);
+
+          &-btn {
+            @extend %titleBtn;
+          }
+        }
+
+        &-info {
+          display: flex;
+          align-items: center;
+
+          &-time {
+            color: $lightGreen;
+            padding: 8px 15px;
+            letter-spacing: 0.6px;
+            width: 95%;
+            font-size: 14px;
+            line-height: 20px;
+            text-align: center;
+          }
+
+          .article__list__admin-btns {
+            display: flex;
+
+            .article__list__admin-btn {
+              margin-left: 10px;
+              width: 35px;
+              @include btnHoverColor;
+              @include btn1(5px 7px);
+            }
+          } 
+        }
+      }
+    }
+
+    .page__info {
+      text-align: center;
+      margin-bottom: 10px;
+      color: $mediumGreen;
+    }
+    
+    .paginator {
+      text-align: center;
+      margin: 30px;
+      display: flex;
+      justify-content: center;
+      
+      a {
+        margin: 0 8px;
+        @include btn1(8px 12px);
+        @include btnHoverColor;       
+      }
+    }
+  }
+
+  .login {
+    @include articlesSection(40%, -40px, 5px);
+
+    &__section {
+      @extend %border;
+
+      &__title {
+        margin: 70px auto;
+        text-align: center;
+        @include title(34px);
+      }
+
+      &__form {
+        margin-top: 50px;
+        width: 100%;
+        text-align: center;
+
+        &-info {
+          div {
+            color: $mediumGreen;
+            margin: 40px 51% 0px 0px;
+            letter-spacing: 1px;
+            font-size: 16px;
+          }
+          input {
+            color: $mediumGreen;
+            margin: 20px 14%;
+            width: 70%;
+            height: 40px;
+            @extend %placeholder
+          }
+        }
+
+        &-btn {
+          margin: 60px auto;
+          width: 72%;
+          background: $mediumGreen;
+          color: $backgroundColor;
+          border: none;
+          height: 50px;
+          font-size: 20px;
+          letter-spacing: 1px;
+          @include btnHoverScale(1.05);
+        }
+
+        &-error {
+          text-align: start;
+          margin-left: 14%;
+          margin-top: 10px;
+          @extend %errorMessage;
+        }
+      }
+    }
+  }
+
+  footer {
+    background: $mediumGreen;
+    text-align: center;
+    padding: 10px;
+    color: $backgroundColor;
+    letter-spacing: 1px;
+    height: 20px;
+  }
+}
+
+
