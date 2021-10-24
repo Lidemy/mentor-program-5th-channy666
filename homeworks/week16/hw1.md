@@ -22,7 +22,7 @@ console.log(5)
 2. 執行程式第一行， `console.log(1)` 進入 stack，輸出 1 之後 pop 離開 stack
 3. 執行程式第二行， `setTimeout()` 進入 stack，呼叫 setTimeout 並傳入 callback function 與時間，後續就交由 browser（或是任何 JavaScript 的執行環境）處理，`setTimeout()` pop 離開 stack
    * setTimeout 是由執行環境提供的 function
-   * setTimeout 被呼叫時，執行環境會依據傳入的時間參數開始計時
+   * setTimeout 被呼叫後，執行環境會依據傳入的時間（第二個參數）開始計時
    * 時間到之後會將 callback function 送到 task queue 去排隊
 4. 執行程式第五行， `console.log(3)` 進入 stack，輸出 3 之後 pop 離開 stack
 5. 執行程式第六行，`setTimeout()` 進入 stack，呼叫 setTimeout 並傳入 callback function 與時間，後續交由 browser（或是任何 JavaScript 的執行環境）處理，`setTimeout()` pop 離開 stack
