@@ -1,7 +1,7 @@
 /* eslint-disable import/no-unresolved, quotes, semi, no-unused-vars, comma-dangle */
 
 import styled from "styled-components";
-import { arrayFrom0To18, arrayFrom1To19, newArray } from "./constance";
+import { arrayFrom0To18, arrayFrom1To19, newArray } from "./utils";
 
 const BoardContainer = styled.div`
   margin: 20px;
